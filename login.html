@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Signup</title>
+</head>
+<body>
+  <div class="button-container">
+    <a href="studentlogin.html"><button class="student-button">Student Login</button></a>
+    <a href="facultylogin.html"><button class="faculty-button">Faculty Login</button></a>
+    <a href="officelogin.html"><button class="office-button">Office Login</button></a>
+  </div>
+</body>
+</html>
+<style>
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #343232; /* Dark Grey Red Background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 30px;
+  align-items: center;
+  border: 10px solid rgb(255, 255, 255); /* Final border containing the buttons with the same width */
+  border-radius: 30px;
+  padding: 50px; /* Space inside the final border */
+}
+
+/* General button styles */
+button {
+  padding: 15px 40px; /* Increased padding to make the buttons bigger */
+  text-shadow: 3px 3px 10px rgb(117, 145, 90);
+  font-size: 30px; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
+  border: 5px solid rgb(255, 255, 255); /* Symmetric border with the same width for all buttons */
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+/* Styles for each specific button */
+.student-button {
+  background-color: black;
+}
+
+.faculty-button {
+    background-color: black;
+}
+
+.office-button {
+    background-color: black;
+    padding-left :50px;
+    padding-right :50px;
+}
+
+/* Hover styles */
+button:hover {
+  background-color: rgb(243, 243, 156); /* Yellow background on hover */
+  color: #000000; /* Dark text color on hover */
+  font-size: 35px; /* Larger font size */
+  text-shadow: 3px 3px 10px rgb(71, 81, 143);
+  border: 4px solid rgb(10, 10, 10);
+}
+</style>
